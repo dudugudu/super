@@ -1,0 +1,10 @@
+body {
+    background-color: #5e6a75;
+}
+.logo-svg {
+    width: 120px;
+    background-size: contain;
+}
+a {
+    text-decoration: none;
+}

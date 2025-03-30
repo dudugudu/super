@@ -1,0 +1,27 @@
+body {
+    background-color: #5e6a75;
+}
+.logo-svg {
+    width: 120px;
+    background-size: contain;
+}
+a {
+    text-decoration: none;
+}
+
+.trash-icon {
+    color: #ff0000;
+    font-size: 20px;
+    cursor: pointer;
+}
+.trash-icon:hover {
+    color: #ff4d4d;
+}
+.edit-icon {
+    color: #007bff;
+    font-size: 20px;
+    cursor: pointer;
+}
+.edit-icon:hover {
+    color: #3399ff;
+}

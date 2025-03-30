@@ -1,4 +1,4 @@
-@extends('template')
+@extends('template.main')
 
 @section('content')
 
@@ -6,7 +6,7 @@
     @csrf
     <div class="mb-3">
         <label for="nome" class="form-label">Nome</label>
-        <input type="text" class="form-control" id="name" name="name" value={{product->name}} required>
+        <input type="text" class="form-control" id="name" name="name" value="{{$product->name}}" required>
     </div>
     <div class="mb-3">
         <label for="preco" class="form-label">Preço</label>
