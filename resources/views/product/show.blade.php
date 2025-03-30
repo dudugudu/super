@@ -25,8 +25,8 @@
                     <td>{{ $product->price }}</td>
                     <td>
                         <div class="d-flex justify-content-between">
-                            <a class="fa-solid fa-trash trash-icon" href="/produtos/delete/{{$supplier->id}}"></a>
-                            <a class="fa-solid fa-pen-to-square edit-icon" href="/produtos/edit/{{$supplier->id}}"></a>
+                            <a class="fa-solid fa-trash trash-icon" href="{{route('products.delete',$product->id)}}"></a>
+                            <a class="fa-solid fa-pen-to-square edit-icon" href="{{route('products.edit',$product->id)}}"></a>
                         </div>
                     </td>
                 </tr>

@@ -4,10 +4,10 @@
 <div class="row justify-content-center">
     <div class="col-md-8">
     
-    <a class="btn btn-primary" href="/fornecedores" role="button">
+    <a class="btn btn-primary" href="{{ route('suppliers.show')}}" role="button">
         Fornecedores
     </a>
-    <a class="btn btn-primary" href="/produtos" role="button">
+    <a class="btn btn-primary" href="{{ route('products.show')}}" role="button">
         Produtos
     </a>
     </div>

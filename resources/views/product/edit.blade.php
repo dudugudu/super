@@ -2,7 +2,7 @@
 
 @section('content')
 
-<form action="{{ route('produtos.create')}}" method="POST" class="bg-light p-4 rounded">
+<form action="{{ route('products.update', $product->id)}}" method="POST" class="bg-light p-4 rounded">
     @csrf
     <div class="mb-3">
         <label for="nome" class="form-label">Nome</label>
@@ -10,8 +10,8 @@
     </div>
     <div class="mb-3">
         <label for="preco" class="form-label">Preço</label>
-        <input type="number" class="form-control" id="preco" name="price" required>
+        <input type="number" class="form-control" id="preco" name="price" value="{{$product->price}}" required>
     </div>
-    <button type="submit" class="btn btn-primary">Cadastrar</button>
+    <button type="submit" class="btn btn-primary">Atualizar Cadastro</button>
 </form>
 @endsection

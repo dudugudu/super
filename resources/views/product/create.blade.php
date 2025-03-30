@@ -3,7 +3,7 @@
 @section('content')
 <div class="row justify-content-center">
   <div class="col-md-8">
-    <form action="{{ route('produtos.create')}}" method="POST" class="bg-light p-4 rounded">
+    <form action="{{ route('products.create')}}" method="POST" class="bg-light p-4 rounded">
       @csrf
       <div class="mb-3">
         <label for="nome" class="form-label">Nome</label>

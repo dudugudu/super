@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ProdutosController;
+use App\Http\Controllers\ProductsController;
 use App\Http\Controllers\SuppliersController;
 use App\Models\Product;
 use App\Models\Supplier;
@@ -9,6 +9,8 @@ use App\Models\Supplier;
 Route::get('/', function () {
     return view('home');
 });
+
+
 
 Route::get('/fornecedores', function () {
     $suppliers = Supplier::all();
@@ -50,9 +52,17 @@ Route::get('/produtos/create', function(){
 })->name('pcreate.show');
 
 Route::post('/produtos/create', 
-    [ProdutosController::class, 'create']
-)->name('produtos.create');
+    [ProductsController::class, 'create']
+)->name('products.create');
 
 Route::get('/produtos/edit/{id}', 
-    [ProdutosController::class, 'edit']
-)->name('produtos.edit');
+    [ProductsController::class, 'edit']
+)->name('products.edit');
+
+Route::post('/produtos/edit/{id}', 
+    [ProductsController::class, 'update']
+)->name('products.update');
+
+Route::get('/produtos/delete/{id}', 
+    [ProductsController::class, 'delete']
+)->name('products.delete');
